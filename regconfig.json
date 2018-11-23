@@ -1,0 +1,26 @@
+{
+  "core": {
+    "workingDir": ".reg",
+    "actualDir": "screenshot",
+    "thresholdRate": 0,
+    "addIgnore": true,
+    "ximgdiff": {
+      "invocationType": "client"
+    }
+  },
+  "plugins": {
+    "reg-keygen-git-hash-plugin": true,
+    "reg-notify-github-plugin": {
+      "clientId": "MzS1MLcwMDay1C9KTdctKC0oSC1JTS3STUnNzdctzyzJ0M3NzMvM1zcxNzQ2ttDPTs1LS0ktAwA="
+    },
+    "reg-publish-s3-plugin": {
+      "bucketName": "static",
+      "customDomain": "f73f7f68.ngrok.io",
+      "sdkOptions": {
+        "endpoint": "https://2faf772f.ngrok.io",
+        "s3ForcePathStyle": true,
+        "signatureVersion": "v4"
+      }
+    }
+  }
+}
